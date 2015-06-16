@@ -1,0 +1,28 @@
+{
+  "name": "parse-keys",
+  "version": "1.0.0",
+  "description": "JSON.parse only object keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radubrehar/parse-keys.git"
+  },
+  "keywords": [
+    "parse",
+    "keys",
+    "json",
+    "JSON.parse"
+  ],
+  "author": "Radu Brehar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radubrehar/parse-keys/issues"
+  },
+  "homepage": "https://github.com/radubrehar/parse-keys",
+  "dependencies": {
+    "object-assign": "^3.0.0"
+  }
+}
