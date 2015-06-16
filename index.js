@@ -1,12 +1,17 @@
 'use strict';
 
 var assign = require('object-assign');
+var hasOwn = require('hasown');
 
 module.exports = function(object, keys){
 
 	var result = {}
 
-	;(keys || Object.keys(object)).forEach(function(key){
+	if (keys){
+		keys = keys.filter(hasOwn(object))
+	}
+
+	keys.forEach(function(key){
 		var value = object[key]
 
 		try { value = JSON.parse(value) } catch (ex){ }
