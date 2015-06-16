@@ -7,7 +7,7 @@ module.exports = function(object, keys){
 
 	var result = {}
 
-	if (keys){
+	if (Array.isArray(keys)){
 		keys = keys.filter(hasOwn(object))
 	}
 
