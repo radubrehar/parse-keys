@@ -9,6 +9,8 @@ module.exports = function(object, keys){
 
 	if (Array.isArray(keys)){
 		keys = keys.filter(hasOwn(object))
+	} else {
+		keys = Object.keys(object)
 	}
 
 	keys.forEach(function(key){
