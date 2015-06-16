@@ -25,5 +25,9 @@ console.log(env.PORT) === 4000
 ```
 
 ```sh
-$ PORT=4000
+$ PORT=4000 node server.js
 ```
+
+## License
+
+#### MIT
