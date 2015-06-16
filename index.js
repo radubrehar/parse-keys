@@ -9,7 +9,9 @@ module.exports = function(object, keys){
 	;(keys || Object.keys(object)).forEach(function(key){
 		var value = object[key]
 
-		result[key] = JSON.parse(value)
+		try { value = JSON.parse(value) } catch (ex){ }
+
+		result[key] = value
 	})
 
 	return result
